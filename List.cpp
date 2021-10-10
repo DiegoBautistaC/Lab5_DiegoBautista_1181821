@@ -80,22 +80,13 @@ int List::IndiceDe(int elemento)
 		}
 	}
 	return -1;
-	//Le puede servir a Vicfrost
-	//int count = 0;
-	//for (NodoSimple^ indice = Cabeza; indice != nullptr; indice = indice->Siguiente)
-	//{
-	//	if (indice->Valor == valor)
-	//		return count;
-	//	count++;
-	//}
-	//return -1;
 }
 
 void List::Insertar(int indice, int elemento)
 {
 	if (indice < 0 || indice >= Contar())
 	{
-		std::cout << "Error: el elemento no puede ser colocado en la posición deseada.\n";
+		std::cout << "Error: el elemento no puede ser colocado en la posiciÃ³n deseada.\n";
 	}
 	else if (indice == 0)
 	{
